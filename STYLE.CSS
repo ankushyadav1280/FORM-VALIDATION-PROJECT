@@ -1,0 +1,132 @@
+/* General body styling with animated gradient background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #667eea, #764ba2, #ff6a88, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;  /* Background animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Keyframes for animated background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Form container */
+.form-container {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  max-height: 80vh;
+  overflow-y: auto; /* Scrollable form */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Form heading */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input styling */
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102,126,234,0.5);
+  outline: none;
+}
+
+/* Gender option container */
+.gender-options {
+  margin-top: 8px;
+}
+
+/* Radio button custom design */
+.radio {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.radio input {
+  display: none; /* Hide default radio */
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #667eea;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* When selected, circle animates */
+.radio input:checked + .circle {
+  background: #667eea;
+  box-shadow: 0 0 12px #667eea;
+  transform: scale(1.2);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Error/Success message */
+#errorMsg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Fade-in animation for form */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
