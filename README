@@ -1,0 +1,37 @@
+  Registration Form 
+
+##  Project Overview
+This is a web development project based on **Form Validation** requirements.  
+The project implements a **scrollable, animated registration form** with fields for user details and validation using **JavaScript**.
+
+It was created as part of the **Plasmid Web Development Major Project**.
+
+---
+
+## Features
+- Full Name, Email, Phone Number, Password, Confirm Password, and Gender fields.
+- Validation rules:
+  - Name must be at least 5 characters.
+  - Email must contain `@`.
+  - Phone must be 10 digits and not `1234567890`.
+  - Password must be strong (≥ 8 characters, not "password" or user’s name).
+  - Confirm Password must match Password.
+- Gender selection with **animated circle radio buttons**.
+- Animated **gradient background** with fade-in form effect.
+- Scrollable form (max height 80vh).
+- Validation error messages displayed dynamically.
+- Success message when form is correctly submitted.
+
+---
+
+##  Tech Stack
+- **HTML5** → Form structure  
+- **CSS3** → Animated gradient background, custom form styling, radio button animations  
+- **JavaScript (Vanilla JS)** → Form validation with event listeners and conditions  
+
+---
+
+##  Project Structure
+├── index.html # HTML Form
+├── style.css # CSS for design & animations
+├── script.js # JavaScript validation logic
