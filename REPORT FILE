@@ -1,0 +1,37 @@
+PROJECT TITLE:
+Animated Registration Form with Validation
+
+PROJECT OVERVIEW:
+This project is a registration form designed with modern UI and JavaScript validation. The purpose of the project is to ensure that users provide correct details while making the form interactive and visually appealing. The design includes animations, custom radio buttons, and a smooth scrolling effect.
+
+OBJECTIVES:
+1. Create a form with Full Name, Email, Phone Number, Password, Confirm Password, and Gender options.
+2. Implement form validation rules to ensure correct user input.
+3. Display appropriate error messages for invalid inputs.
+4. Provide success confirmation when the form is correctly filled.
+5. Make the form visually engaging with an animated background and custom styles.
+
+TECHNOLOGIES USED:
+- HTML5 for structure of the form.
+- CSS3 for design, animations, and layout.
+- JavaScript for validation and error handling.
+
+KEY FEATURES:
+- Validation ensures name is at least 5 characters long.
+- Email must contain the '@' symbol.
+- Phone number must be a valid 10-digit number and not "1234567890".
+- Password must be strong, not equal to "password" or the user’s name.
+- Confirm password must match the entered password.
+- Gender selection is provided with custom animated radio buttons.
+- Background animation with a colorful gradient effect.
+- Form is scrollable for better usability.
+
+DESIGN & USER EXPERIENCE:
+The form is centered on the screen with rounded edges and shadows for a modern look. 
+The animated gradient background changes colors smoothly, making the form stand out. 
+Custom radio buttons with glowing animation are used for gender selection. 
+Inputs highlight when focused. The overall design ensures both functionality and aesthetics.
+
+CONCLUSION:
+The Animated Registration Form project successfully integrates form validation, modern UI design, and interactivity using only HTML, CSS, and JavaScript without external libraries. 
+It meets the project requirements and provides a user-friendly experience.
