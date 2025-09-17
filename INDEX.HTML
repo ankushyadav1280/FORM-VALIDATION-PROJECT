@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container for the form -->
+  <div class="form-container">
+    <form id="myForm">
+      <h2>Registration Form</h2>
+
+      <!-- Full Name -->
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Enter Full Name" required>
+
+      <!-- Email -->
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Enter Email" required>
+
+      <!-- Phone Number -->
+      <label>Phone Number</label>
+      <input type="text" id="phone" placeholder="Enter Phone Number" required>
+
+      <!-- Password -->
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required>
+
+      <!-- Confirm Password -->
+      <label>Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+      <!-- Gender Selection with Animated Circle -->
+      <label>Gender</label>
+      <div class="gender-options">
+        <label class="radio">
+          <input type="radio" name="gender" value="Male" required>
+          <span class="circle"></span> Male
+        </label>
+        <label class="radio">
+          <input type="radio" name="gender" value="Female">
+          <span class="circle"></span> Female
+        </label>
+        <label class="radio">
+          <input type="radio" name="gender" value="Other">
+          <span class="circle"></span> Other
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+
+      <!-- Error / Success Message -->
+      <p id="errorMsg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
